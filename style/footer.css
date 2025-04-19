@@ -1,0 +1,24 @@
+.footer-content{
+    height: 16vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    
+
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 1920px;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-icon{
+    height: 56px;
+    width: 56px;
+    align-content: center;
+}

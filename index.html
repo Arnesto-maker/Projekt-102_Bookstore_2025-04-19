@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/bookstore-icon-37380.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/standard.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Bookstore</title>
+</head>
+
+<body onload="renderBook()" >
+    <header>
+        <div class="header-content">
+            <div class="logo-parent">
+                <div class="logo">
+                    <img src="img/bookstore-icon-37380.png" alt="Bookstore Logo" class="logo-image">
+                    <h3>Bookstore</h3>
+                </div>
+                <p class="logo-subtitle">get your book here</p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="main-content">
+            <div class="main-content-child">
+                <button id="prevCard" onclick="prevBook()"> <img src="img/arrow-left-3099.png" alt=""></button>
+                <div id="main-content-grandChild">
+                    <div class="store-card">
+                        <div id="title"> 
+                            <!-- hier wird der title gerendert -->
+                        </div>
+                        <div class="store-card-image">
+                            <img src="img/book.png" alt="" class="storeCardImg">
+                        </div>
+                        <div id="storeCardDetails">
+                            <div id="storeCardPriceAndRating">
+                                <div id="storeCardPrice">
+                                    <!-- hier wird der preis gerendert -->
+                                </div>
+                                <div id ="storeCardRating">
+                                    <div id="storeCardRatingNumber">
+                                        <!-- hier wird der rating gerendert -->
+                                    </div>
+                                    <img src="img/heart-3510.png" alt="" class="storeCardRatingImg" id="storeCardRatingImg" 
+                                    onclick="likebuttonClick()">
+                                </div>
+                            </div>
+                            <div id="storeCardDescription">
+                                <table>
+                                 <tr>
+                                     <td>Author</td>
+                                     <td id="storeCardAuthor">: 
+                                        <!-- hier wird der author gerendert -->
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Erscheinungsjahr</td>
+                                     <td id="storeCardErscheinungsjahr">:
+                                        <!-- hier wird das erscheinungsjahr gerendert -->
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td>Genre</td>
+                                     <td id="storeCardGenre">:
+                                        <!-- hier wird das genre gerendert -->
+                                     </td>
+                                 </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                <button id="nextCard" onclick="nextBook()"> <img src="img/arrow-right-3098.png" alt=""></button>
+
+            </div>
+         </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="logo-parent">
+                <div class="logo">
+                    <img src="img/bookstore-icon-37380.png" alt="Bookstore Logo" class="logo-image">
+                    <h3>Bookstore</h3>
+                </div>
+                <div class="footer-text">Copyright &copy; 2025 Bookstore</div>
+            </div>
+            <div class="social-media">
+                <div class="social-media-icon"><a href="#"><img src="img/thalia-seeklogo.svg" alt="thalia"></a></div>
+                <div class="social-media-icon">
+                    <a href="#">
+                        <img src="img/amazon.svg" alt="amazon" class="social-media-icon">
+                    </a>
+                </div>
+                <div class="social-media-icon"><a href="#"><img src="img/audible-icon.png" alt="audible" class="social-media-icon"></a></div>
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+<script src="script/datenbank.js"></script>
+<script src="script/script.js"></script>
+<script src="script/likeButton.js"></script>
+<script src="script/template.js"></script>
+
+</html>

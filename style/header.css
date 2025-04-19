@@ -1,0 +1,30 @@
+.header-content{
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 1920px;
+}
+.logo-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.logo-image{height: 40px;}
+.logo-subtitle{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 64px;
+}
