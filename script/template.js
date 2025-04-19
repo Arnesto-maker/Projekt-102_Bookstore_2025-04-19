@@ -17,6 +17,8 @@ function getPublishedYear() {
 function getGenre() {
     return `: ${books[index].genre}`;
 }
-
+function getLiked() {
+    return `${books[index].liked}`;
+}
 
 

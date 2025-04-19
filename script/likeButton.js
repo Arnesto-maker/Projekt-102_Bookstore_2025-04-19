@@ -1,3 +1,4 @@
+
 function likebuttonClick() {
     const likeButton = document.getElementById("storeCardRatingImg");
     const likeButtonNumber = document.getElementById("storeCardRatingNumber");
@@ -7,7 +8,5 @@ function likebuttonClick() {
     } else {
         likeButton.src = "img/heart-3510.png";
         likeButtonNumber.textContent = parseInt(likeButtonNumber.textContent) - 1;
-    }
-    
-
+    } 
 }

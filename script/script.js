@@ -4,6 +4,8 @@ let rating = document.getElementById("storeCardRatingNumber");
 let price = document.getElementById("storeCardPrice");
 let genre = document.getElementById("storeCardGenre");
 let publishedYear = document.getElementById("storeCardErscheinungsjahr");
+let likeButton = document.getElementById("storeCardRatingImg");
+
 
 
 let index = 0;
@@ -15,6 +17,11 @@ function renderBook() {
     price.textContent = getPrice();
     genre.textContent = getGenre();
     publishedYear.textContent = getPublishedYear();
+    if (getLiked() === "true") {
+        likeButton.src = "img/red-heart-11121.png";
+    } else {
+        likeButton.src = "img/heart-3510.png";
+    }
 }
 
 function nextBook() {
