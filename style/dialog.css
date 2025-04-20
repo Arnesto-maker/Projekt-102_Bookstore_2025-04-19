@@ -1,0 +1,76 @@
+.dialogHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+}
+#closeDialog:hover{
+    color: red;
+}
+
+.dialogContent{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#dialogTitle{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+#dialogImageStatic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.dialogDescriptionTitle{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+
+}
+#aboutThebook{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+}
+#comment{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 2px solid white;
+    overflow-y: scroll;
+    max-height: 80px;
+    min-height: 80px;
+}
+#inputCommentSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#inputComment{
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:black;
+}
+#sendComment{
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}

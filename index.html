@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/dialog.css">
     <title>Bookstore</title>
 </head>
 
@@ -30,21 +31,15 @@
                 <button id="prevCard" onclick="prevBook()"> <img src="img/arrow-left-3099.png" alt=""></button>
                 <div id="main-content-grandChild">
                     <div class="store-card">
-                        <div id="title"> 
-                            <!-- hier wird der title gerendert -->
-                        </div>
+                        <div id="title"><!-- hier wird der title gerendert --></div>
                         <div class="store-card-image">
                             <img src="img/book.png" alt="" class="storeCardImg">
                         </div>
                         <div id="storeCardDetails">
                             <div id="storeCardPriceAndRating">
-                                <div id="storeCardPrice">
-                                    <!-- hier wird der preis gerendert -->
-                                </div>
+                                <div id="storeCardPrice"><!-- hier wird der preis gerendert --></div>
                                 <div id ="storeCardRating">
-                                    <div id="storeCardRatingNumber">
-                                        <!-- hier wird der rating gerendert -->
-                                    </div>
+                                    <div id="storeCardRatingNumber"><!-- hier wird der rating gerendert --></div>
                                     <img src="img/heart-3510.png" alt="" class="storeCardRatingImg" id="storeCardRatingImg" 
                                     onclick="likebuttonClick()"> 
                                 </div>
@@ -53,46 +48,77 @@
                                 <table>
                                  <tr>
                                      <td>Author</td>
-                                     <td id="storeCardAuthor">: 
-                                        <!-- hier wird der author gerendert -->
-                                     </td>
+                                     <td id="storeCardAuthor"><!-- hier wird der author gerendert --></td>
                                  </tr>
                                  <tr>
                                      <td>Erscheinungsjahr</td>
-                                     <td id="storeCardErscheinungsjahr">:
-                                        <!-- hier wird das erscheinungsjahr gerendert -->
-                                     </td>
+                                     <td id="storeCardErscheinungsjahr"><!-- hier wird das erscheinungsjahr gerendert --></td>
                                  </tr>
                                  <tr>
                                      <td>Genre</td>
-                                     <td id="storeCardGenre">:
-                                        <!-- hier wird das genre gerendert -->
-                                     </td>
+                                     <td id="storeCardGenre"><!-- hier wird das genre gerendert --></td>
                                  </tr>
                                 </table>
                             </div>
                             <div class="storeCardFooterToolbar">
-                                <button id="storeCardReviewButton">Leave a review</button>
+                                <button id="storeCardReviewButton">Leave a comment</button>
                                 <button id="storeCardBuyButton">
                                     Buy
                                     <img src="img/add-to-cart-3046.png" alt="buy" id="storeCardBuyButtonImg">
                                 </button>
-                                <div id="storeCardSequence">
-                                    
-                                    <!-- hier wird gerendert -->
-                                </div>
+                                <div id="storeCardSequence"><!-- hier wird gerendert --></div>
                             </div>
                         </div>
                     </div>
-                    
-
-
                 </div>
                 <button id="nextCard" onclick="nextBook()"> <img src="img/arrow-right-3098.png" alt=""></button>
 
             </div>
          </div>
     </section>
+    <div class="dialogSection">
+        <div class="dialog">
+            <div class="dialogHeader">
+               <div id="closeDialog" onclick="closeDialog()">X</div> 
+            </div>
+            <div class="dialogContent">
+                <div id="dialogTitle">
+                    Hier wird der title gerendert
+                    <!-- hier wird der title gerendert -->1
+                </div>
+                <div id="dialogImageStatic">
+                    <img src="img/book.png" alt="" id="dialogImage">
+                </div>
+                <div id="dialogDescription">
+                    <div class="dialogDescriptionTitle">Book description:</div>
+                    <div id="aboutThebook">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam
+                  
+                    </div>
+                </div>
+                <div id="comment">
+                    <table>
+                        <tr>
+                            <td id="commentSender">Autor</td>
+                            <td id="commentInside">example</td>
+                    </table>
+                    <!-- hier werden die comments gerendert -->
+                </div>
+                <div id="inputCommentSection">
+                    <input type="text" placeholder="write a comment..." id="inputComment">
+                    <button id="sendComment">
+                        <img src="img/paper-plane-2563.png" alt="paperPlane" 
+                        onmousedown="sendCommentButtonAktiv()" 
+                        onmouseup="sendCommentButtonDeaktiv()"
+                        id="sendCommentImg">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
     <footer>
         <div class="footer-content">
             <div class="logo-parent">
@@ -121,5 +147,5 @@
 <script src="script/script.js"></script>
 <script src="script/likeButton.js"></script>
 <script src="script/template.js"></script>
-
+<script src="script/dialog.js"></script>
 </html>
