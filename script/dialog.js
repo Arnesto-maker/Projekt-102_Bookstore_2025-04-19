@@ -24,9 +24,10 @@ function renderDialog(index) {
     let commentTable = document.getElementById("commentTable");
     let resumeSender = document.getElementById("commentSender");
     let resumeInside = document.getElementById("commentInside");
-
+    let inputComment = document.getElementById("inputComment");
     dialogTitle.textContent = getTitle();
-    
+    commentTable.innerHTML = "";
+    inputComment.value = "";    
     for (let i = 0; i < books[index].comments.length; i++) {
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
@@ -42,6 +43,23 @@ function renderDialog(index) {
         
     }
   
+}
+
+function sendComment() {
+    let inputComment = document.getElementById("inputComment");
+    let commentTable = document.getElementById("commentTable");
+    let tr = document.createElement("tr");
+    let td1 = document.createElement("td");
+    let td2 = document.createElement("td");
+    td1.classList.add("padding-top");
+    td2.classList.add("padding-top");
+    td2.classList.add("padding-left");
+    td1.textContent = "you";
+    td2.textContent = inputComment.value;
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    commentTable.appendChild(tr);
+    inputComment.value = "";
 }
 
 

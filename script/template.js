@@ -27,9 +27,6 @@ function getDialogTitle() {
     return `${books[index].name}`;
 }
    
-function getPosition() {
-    return `${index}`;
-}
-function getCommentButton() {
-    return `<button id="storeCardReviewButton" onclick="openDialog(index)">Leave a comment</button>`;
+function getLeaveAComment() {
+    return `<button id="storeCardReviewButton" onclick="openDialog(${index})">Leave a comment</button>`;
 }

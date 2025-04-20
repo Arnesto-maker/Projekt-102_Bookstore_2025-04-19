@@ -61,7 +61,7 @@
                                 </table>
                             </div>
                             <div class="storeCardFooterToolbar">
-                                <button id="storeCardReviewButton" onclick="openDialog(index)">Leave a comment</button>
+                                <div id="leaveAComment"></div>
                                 <button id="storeCardBuyButton">
                                     Buy
                                     <img src="img/add-to-cart-3046.png" alt="buy" id="storeCardBuyButtonImg">
@@ -100,7 +100,7 @@
                 </div>
                 <div id="comment">
                     <table id="commentTable">
-
+                        <!-- hier werden die kommentare gerendert -->
                     </table>
       
                 </div>
@@ -110,6 +110,7 @@
                         <img src="img/paper-plane-2563.png" alt="paperPlane" 
                         onmousedown="sendCommentButtonAktiv()" 
                         onmouseup="sendCommentButtonDeaktiv()"
+                        onclick="sendComment()"
                         id="sendCommentImg">
                     </button>
                 </div>
