@@ -20,5 +20,7 @@ function getGenre() {
 function getLiked() {
     return `${books[index].liked}`;
 }
-
+function getSequence() {
+    return `${index + 1} / ${books.length}`;
+}
 

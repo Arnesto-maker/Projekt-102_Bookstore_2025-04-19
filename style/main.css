@@ -88,5 +88,40 @@
 }
 
 #storeCardDescription{
-    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.storeCardFooterToolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+}
+#storeCardReviewButton{
+    background-color: rgba(0, 0, 0, 0.214);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+}
+#storeCardBuyButton{
+    background-color: rgba(0, 0, 0, 0.214);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+#storeCardBuyButtonImg{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+#storeCardSequence{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -5,6 +5,7 @@ let price = document.getElementById("storeCardPrice");
 let genre = document.getElementById("storeCardGenre");
 let publishedYear = document.getElementById("storeCardErscheinungsjahr");
 let likeButton = document.getElementById("storeCardRatingImg");
+let storeCardSequence = document.getElementById("storeCardSequence");
 
 
 
@@ -22,6 +23,7 @@ function renderBook() {
     } else {
         likeButton.src = "img/heart-3510.png";
     }
+    storeCardSequence.textContent = getSequence();
 }
 
 function nextBook() {
