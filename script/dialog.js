@@ -1,7 +1,10 @@
+function openDialog(index) {
+    let dialog = document.querySelector(".dialogSection");
+    dialog.setAttribute("style", "display: flex;");
+    renderDialog(index);
+}
 function closeDialog() {
     let dialog = document.querySelector(".dialogSection");
-    let dialogHeader = document.querySelector(".dialogHeader");
-    dialogHeader.setAttribute("style", "color: red;");
     dialog.setAttribute("style", "display: none;");
 
 }
@@ -13,3 +16,33 @@ function sendCommentButtonDeaktiv() {
     let sendCommentImg = document.getElementById("sendCommentImg");
     sendCommentImg.src = "img/paper-plane-2563.png";
 }
+
+
+function renderDialog(index) {
+    let dialogTitle = document.getElementById("dialogTitle");
+    let description = document.getElementById("aboutThebook");
+    let commentTable = document.getElementById("commentTable");
+    let resumeSender = document.getElementById("commentSender");
+    let resumeInside = document.getElementById("commentInside");
+
+    dialogTitle.textContent = getTitle();
+    
+    for (let i = 0; i < books[index].comments.length; i++) {
+        let tr = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        td1.classList.add("padding-top");
+        td2.classList.add("padding-top");
+        td2.classList.add("padding-left");
+        td1.textContent = books[index].comments[i].name;
+        td2.textContent = books[index].comments[i].comment;
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        commentTable.appendChild(tr);
+        
+    }
+  
+}
+
+
+

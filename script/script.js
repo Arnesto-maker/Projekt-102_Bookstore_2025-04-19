@@ -29,8 +29,10 @@ function renderBook() {
 function nextBook() {
     index = (index + 1) % books.length;
     renderBook();
+    
 }
 function prevBook() {
     index = (index - 1 + books.length) % books.length;
     renderBook();
+    
 }

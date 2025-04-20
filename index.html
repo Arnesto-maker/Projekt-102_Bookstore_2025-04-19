@@ -61,7 +61,7 @@
                                 </table>
                             </div>
                             <div class="storeCardFooterToolbar">
-                                <button id="storeCardReviewButton">Leave a comment</button>
+                                <button id="storeCardReviewButton" onclick="openDialog(index)">Leave a comment</button>
                                 <button id="storeCardBuyButton">
                                     Buy
                                     <img src="img/add-to-cart-3046.png" alt="buy" id="storeCardBuyButtonImg">
@@ -94,16 +94,15 @@
                     <div id="aboutThebook">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
                         eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        <!-- hier wird die description gerendert -->
                   
                     </div>
                 </div>
                 <div id="comment">
-                    <table>
-                        <tr>
-                            <td id="commentSender">Autor</td>
-                            <td id="commentInside">example</td>
+                    <table id="commentTable">
+
                     </table>
-                    <!-- hier werden die comments gerendert -->
+      
                 </div>
                 <div id="inputCommentSection">
                     <input type="text" placeholder="write a comment..." id="inputComment">

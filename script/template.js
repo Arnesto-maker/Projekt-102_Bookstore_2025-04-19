@@ -23,4 +23,13 @@ function getLiked() {
 function getSequence() {
     return `${index + 1} / ${books.length}`;
 }
-
+function getDialogTitle() {
+    return `${books[index].name}`;
+}
+   
+function getPosition() {
+    return `${index}`;
+}
+function getCommentButton() {
+    return `<button id="storeCardReviewButton" onclick="openDialog(index)">Leave a comment</button>`;
+}
