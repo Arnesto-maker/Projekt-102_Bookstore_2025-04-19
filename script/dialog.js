@@ -54,7 +54,7 @@ function sendComment() {
     td1.classList.add("padding-top");
     td2.classList.add("padding-top");
     td2.classList.add("padding-left");
-    td1.textContent = "you";
+    td1.textContent = "Arnesto";
     td2.textContent = inputComment.value;
     tr.appendChild(td1);
     tr.appendChild(td2);
