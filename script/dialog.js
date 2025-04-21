@@ -58,8 +58,10 @@ function sendComment() {
     td2.textContent = inputComment.value;
     tr.appendChild(td1);
     tr.appendChild(td2);
-    commentTable.appendChild(tr);
+    const firstChild = commentTable.firstElementChild;
+    commentTable.insertBefore(tr, firstChild);
     inputComment.value = "";
+    
 }
 
 
