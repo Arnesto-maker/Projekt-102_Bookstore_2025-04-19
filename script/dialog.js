@@ -35,7 +35,7 @@ function renderDialog(index) {
         td1.classList.add("padding-top");
         td2.classList.add("padding-top");
         td2.classList.add("padding-left");
-        td1.textContent = books[index].comments[i].name;
+        td1.textContent = String("@"+""+ books[index].comments[i].name+":");
         td2.textContent = books[index].comments[i].comment;
         tr.appendChild(td1);
         tr.appendChild(td2);
@@ -54,7 +54,7 @@ function sendComment() {
     td1.classList.add("padding-top");
     td2.classList.add("padding-top");
     td2.classList.add("padding-left");
-    td1.textContent = "Arnesto";
+    td1.textContent = "@Arnesto:";
     td2.textContent = inputComment.value;
     tr.appendChild(td1);
     tr.appendChild(td2);

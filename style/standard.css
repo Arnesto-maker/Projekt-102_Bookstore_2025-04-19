@@ -18,6 +18,10 @@
     font-weight: 700;
     font-style: normal;
 }
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Figtree-Regular';
     margin: 0;
