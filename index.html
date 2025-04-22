@@ -28,7 +28,9 @@
     <section>
         <div class="main-content">
             <div class="main-content-child">
-                <button id="prevCard" onclick="prevBook()"> <img src="img/arrow-left-3099.png" alt=""></button>
+                <button id="prevCard" onclick="prevBook()"onmousedown="prevBookActive()" onmouseup="prevBookDeactive()">
+                    <img src="img/arrow-left-3099.png" alt="" id="prevCardImg">
+                </button>
                 <div id="main-content-grandChild">
                     <div class="store-card">
                         <div id="title"><!-- hier wird der title gerendert --></div>
@@ -71,8 +73,9 @@
                         </div>
                     </div>
                 </div>
-                <button id="nextCard" onclick="nextBook()"> <img src="img/arrow-right-3098.png" alt=""></button>
-
+                <button id="nextCard" onclick="nextBook()" onmousedown="nextBookActive()" onmouseup="nextBookDeactive()"> 
+                    <img src="img/arrow-right-3098.png" alt="" id="nextCardImg">
+                </button>
             </div>
          </div>
     </section>
@@ -92,9 +95,7 @@
                 <div id="dialogDescription">
                     <div class="dialogDescriptionTitle">Book description:</div>
                     <div id="aboutThebook">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam
-                        <!-- hier wird die description gerendert -->
+                       <!-- hier wird die description gerendert -->
                   
                     </div>
                 </div>

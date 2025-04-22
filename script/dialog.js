@@ -26,6 +26,7 @@ function renderDialog(index) {
     let resumeInside = document.getElementById("commentInside");
     let inputComment = document.getElementById("inputComment");
     dialogTitle.textContent = getTitle();
+    description.textContent = getDescription(index);
     commentTable.innerHTML = "";
     inputComment.value = "";    
     for (let i = 0; i < books[index].comments.length; i++) {

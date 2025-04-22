@@ -42,7 +42,7 @@
 .dialogContent{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 #dialogTitle{
     margin: 0;
@@ -74,6 +74,7 @@
     font-weight: 400;
     text-align: left;
     color: white;
+    height: 72px;
 }
 #comment{
     margin: 0;

@@ -29,13 +29,26 @@ function renderBook() {
 }
 
 function nextBook() {
-    
     index = (index + 1) % books.length;
-    renderBook();
-    
+    renderBook();   
 }
 function prevBook() {
     index = (index - 1 + books.length) % books.length;
     renderBook();
-    
+}
+function nextBookActive() {
+    let nextCard = document.getElementById("nextCardImg");
+    nextCard.src="img/arrow-right-3098--black.png";
+}
+function nextBookDeactive() {
+    let nextCard = document.getElementById("nextCardImg");
+    nextCard.src="img/arrow-right-3098.png";
+}
+function prevBookActive() {
+    let prevCard = document.getElementById("prevCardImg");
+    prevCard.src="img/arrow-left-3099--black.png";
+}
+function prevBookDeactive() {
+    let prevCard = document.getElementById("prevCardImg");
+    prevCard.src="img/arrow-left-3099.png";
 }

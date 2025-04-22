@@ -30,3 +30,6 @@ function getDialogTitle() {
 function getLeaveAComment() {
     return `<button id="storeCardReviewButton" onclick="openDialog(${index})">Leave a comment</button>`;
 }
+function getDescription(index) {
+    return `${description[index]}`;
+}

@@ -173,3 +173,17 @@ let books = [
       ]
     }
   ]
+
+  let description = [
+      '"Die Geheimnisse des Ozeans" ist mehr als nur ein Buch – es ist ein Fenster in eine Dimension voller Wunder,Gefahren und ungelöster Rätsel.',
+      ' "Der vergessene Pfad" ist nicht nur eine Geschichte – es ist eine Einladung, ausgetretene Pfade zu verlassen und sich auf eine Entdeckungsreise zu begeben, die tiefer in die Vergangenheit und in das Herz der Wildnis führt.',
+      '"Die Farben des Himmels" ist mehr als nur eine Betrachtung des Firmaments – es ist eine poetische Reise durch die unendliche Leinwand über uns, die unsere Stimmungen widerspiegelt und unsere Fantasie beflügelt.',
+      ' "Das Rätsel der Zeit" ist mehr als nur eine Geschichte – es ist eine tiefgründige Erkundung eines der größten Mysterien des Universums und unserer Existenz.',
+      '"Der letzte Wächter" ist mehr als nur eine Erzählung – es ist eine tiefgründige Auseinandersetzung mit dem Gewicht der Verantwortung, der Bedeutung von Vermächtnissen und dem unerbittlichen Kampf gegen das Verblassen der Erinnerung.',
+      '"Im Schatten des Mondes" ist mehr als nur ein Science-Fiction-Roman – es ist eine magische Reise durch eine faszinierende Fantasiewelt, die uns von Anfang bis Ende bewegt.',
+      '"Jenseits der Sterne" ist mehr als nur ein Science-Fiction-Roman – es ist ein fesselndes Abenteuer, das uns von Anfang bis Ende mitgerissen hat.',
+      '"Das verborgene Königreich" ist mehr als nur ein Fantasy-Roman – es ist ein faszinierendes Buch, das uns von der ersten Seite an gefesselt hat.',
+      '"Liebe in Zeiten des Krieges" ist mehr als nur ein romantischer Roman – es ist eine unglaublich beruhrende Liebesgeschichte, die uns tief bewegt hat.',
+    ]
+    console.table(description);
+  

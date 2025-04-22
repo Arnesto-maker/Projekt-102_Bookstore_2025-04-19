@@ -43,6 +43,12 @@
     background-color:rgba(0, 0, 0, 0.214);
     border-radius: 10px;
 }
+#nextCard{
+    border: none;
+}
+#prevCard{
+    border: none;
+}
 .storeCardImg{
     width: 56px;
     height: 92px;
