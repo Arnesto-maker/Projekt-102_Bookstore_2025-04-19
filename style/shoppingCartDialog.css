@@ -1,0 +1,34 @@
+#shoppingCartDialog{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.474);
+    flex-direction: row;
+    gap: 16px;
+    height: 68.3vh;
+    width: 100vw;
+    top: 88px;
+    justify-content: end;
+    right: 0px;
+}
+#shoppingCartDialog.active{
+    display: flex;
+}
+#shoppingCartDialogContent{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 328px;
+    color: white;
+}
+#shoppingCartDialogHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    padding-top: 16px;
+}
+.quantity{
+    border-radius: 8px;
+}

@@ -8,6 +8,7 @@
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .dialog{
     background-color: rgb(57, 57, 153);

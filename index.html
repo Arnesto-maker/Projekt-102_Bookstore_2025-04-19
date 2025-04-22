@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/dialog.css">
+    <link rel="stylesheet" href="style/shoppingCartDialog.css">
     <title>Bookstore</title>
 </head>
 
@@ -64,7 +65,7 @@
                             </div>
                             <div class="storeCardFooterToolbar">
                                 <div id="leaveAComment"></div>
-                                <button id="storeCardBuyButton">
+                                <button id="storeCardBuyButton" onclick="addToShoppingCart(index)">
                                     Buy
                                     <img src="img/add-to-cart-3046.png" alt="buy" id="storeCardBuyButtonImg">
                                 </button>
@@ -85,26 +86,17 @@
                <div id="closeDialog" onclick="closeDialog()">X</div> 
             </div>
             <div class="dialogContent">
-                <div id="dialogTitle">
-                    Hier wird der title gerendert
-                    <!-- hier wird der title gerendert -->1
-                </div>
+                <div id="dialogTitle"><!-- hier wird der title gerendert --></div>
                 <div id="dialogImageStatic">
                     <img src="img/book.png" alt="" id="dialogImage">
                 </div>
                 <div id="dialogDescription">
                     <div class="dialogDescriptionTitle">Book description:</div>
-                    <div id="aboutThebook">
-                       <!-- hier wird die description gerendert -->
-                  
-                    </div>
+                    <div id="aboutThebook"><!-- hier wird die description gerendert --></div>
                 </div>
                 <div id="comment">
                     <div class="dialogDescriptionTitle"> Your Comments:</div>
-                    <table id="commentTable">
-                        <!-- hier werden die kommentare gerendert -->
-                    </table>
-      
+                    <table id="commentTable"><!-- hier werden die kommentare gerendert --></table>
                 </div>
                 <div id="inputCommentSection">
                     <input type="text" placeholder="write a comment..." id="inputComment" >
@@ -117,7 +109,36 @@
                     </button>
                 </div>
             </div>
-            
+        </div>
+    </div>
+    <div id="shoppingCartSection">
+        <img src="img/add-to-cart-3046.png" alt="shoppingCartSection" id="shoppingCartSectionImg" 
+        onclick="shoppingCartActive()">
+    </div>
+    <div id="shoppingCartDialog">
+        <div id="shoppingCartDialogContent" >
+            <div id="shoppingCartDialogHeader">
+                <h3>Warenkorb</h3>
+            </div>
+            <div id="shoppingCartDialogBody">
+                <div id="shoppingCartDialogBodyChild">
+                  <table id="shoppingCartTable">
+                    <!-- hier werden die books gerendert -->
+
+                  </table>
+                </div>
+            </div>
+            <div id="shoppingCartDialogFooter">
+                <div id="shoppingCartDialogFooterChild">
+                    <div id="shoppingCartDialogTotalPrice">Total: </div>
+                    <div id="shoppingCartDialogTotalPriceValue"></div>
+                </div>
+
+            </div>
+            <div id="shoppingCartDialogBuyButton" >
+
+            </div>
+
         </div>
 
     </div>
@@ -150,4 +171,5 @@
 <script src="script/likeButton.js"></script>
 <script src="script/template.js"></script>
 <script src="script/dialog.js"></script>
+<script src="script/shoppingCart.js"></script>
 </html>

@@ -33,3 +33,6 @@ function getLeaveAComment() {
 function getDescription(index) {
     return `${description[index]}`;
 }
+function getQuantity() {
+    return `<input type="number" min="1" max="10" value="1" id="quantity" class="quantity">`;
+}

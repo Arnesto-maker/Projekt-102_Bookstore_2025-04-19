@@ -131,3 +131,16 @@
     flex-direction: column;
     justify-content: center;
 }
+#shoppingCartSection{
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 56px;
+    height: auto;
+}
+#shoppingCartSectionImg{
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}

@@ -41,9 +41,7 @@ function renderDialog(index) {
         tr.appendChild(td1);
         tr.appendChild(td2);
         commentTable.appendChild(tr);
-
     }
-  
 }
 
 function sendComment() {
