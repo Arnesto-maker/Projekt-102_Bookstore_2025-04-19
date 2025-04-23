@@ -12,7 +12,6 @@ function shoppingCartActive() {
     } else {
         shoppingCartDialog.classList.add("active");
     }
-
 }
 
 function addToShoppingCart(index) {
