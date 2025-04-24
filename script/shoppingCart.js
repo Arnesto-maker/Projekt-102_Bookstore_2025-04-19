@@ -1,4 +1,6 @@
-const functionCounter ={};
+let functionCounter ={};
+let total = document.getElementById("shoppingCartDialogTotalPriceValue");
+total.textContent = "0.00 €";
 function shoppingCartActive() {
     let shoppingCartImg = document.getElementById("shoppingCartSectionImg");
     if (shoppingCartImg.src.endsWith("img/add-to-cart-3046.png")) {
@@ -34,7 +36,13 @@ function addToShoppingCart(index) {
         tr.appendChild(td4);
         shoppingCartTable.appendChild(tr);
     } else {
-        alert("This book is already in your shopping cart!");
+        let quantityClass = document.querySelector("#quantity"+index);
+        quantityClass.value = parseInt(quantityClass.value) + 1;
+        if (quantityClass.value > 10) {
+            quantityClass.value = 10;
+        }else if (quantityClass.value < 1) {
+            quantityClass.value = 1;
+        }
     }
     let quantityClass = document.querySelector("#quantity"+index);
     quantityClass.addEventListener("input", function() {
@@ -69,4 +77,12 @@ function getTotal() {
         total.textContent = totalCost.toFixed(2) + " €";
     }
     
+}
+function buyBooks() {
+    alert("Thanks for your purchase!");
+    let shoppingCartTable = document.getElementById("shoppingCartTable");
+    let total = document.getElementById("shoppingCartDialogTotalPriceValue");
+    total.textContent = "0.00 €";
+    shoppingCartTable.innerHTML = "";
+    functionCounter = {};
 }
