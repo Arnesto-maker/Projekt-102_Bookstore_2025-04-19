@@ -51,6 +51,9 @@ function addToShoppingCart(index) {
     quantityClass.addEventListener("change", () => {
         getTotal();
     });
+    quantityClass.addEventListener("input", () => {
+        getTotal();
+    });
 }
 
 

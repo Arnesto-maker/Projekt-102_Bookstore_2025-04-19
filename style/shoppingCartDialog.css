@@ -30,6 +30,7 @@
     height: 36vh;
     overflow-y: scroll;
     max-height: 36vh;
+    scrollbar-color: #2200ff black; ;
 }
 #shoppingCartDialogHeader{
     display: flex;
@@ -44,7 +45,6 @@
 #shoppingCartDialogBuyButton{
     display: flex;
     flex-direction: row ;
-
     gap: 8px;
     
 }
@@ -60,4 +60,15 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+td:nth-child(1){
+    min-width: 155px;
+}
+td:nth-child(2){
+    min-width: 56px;
+}
+#shoppingCartDialogFooterChild{
+    display: flex;
+    justify-content: space-around;
+    gap: 152px;
 }
