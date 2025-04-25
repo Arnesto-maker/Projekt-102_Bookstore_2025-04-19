@@ -14,7 +14,7 @@
     <title>Bookstore</title>
 </head>
 
-<body onload="renderBook()" >
+<body onload="init()" >
     <header>
         <div class="header-content">
             <div class="logo-parent">
@@ -64,7 +64,7 @@
                                 </table>
                             </div>
                             <div class="storeCardFooterToolbar">
-                                <div id="leaveAComment"></div>
+                                <div id="leaveAComment" ></div>
                                 <button id="storeCardBuyButton" onclick="addToShoppingCart(index)">
                                     Buy
                                     <img src="img/add-to-cart-3046.png" alt="buy" id="storeCardBuyButtonImg">
@@ -104,7 +104,7 @@
                         <img src="img/paper-plane-2563.png" alt="paperPlane" 
                         onmousedown="sendCommentButtonAktiv()" 
                         onmouseup="sendCommentButtonDeaktiv()"
-                        onclick="sendComment()"
+                        onclick="sendComment(index)"
                         id="sendCommentImg">
                     </button>
                 </div>

@@ -52,3 +52,9 @@ function prevBookDeactive() {
     let prevCard = document.getElementById("prevCardImg");
     prevCard.src="img/arrow-left-3099.png";
 }
+function init () {
+    renderBook();
+    for (let i = 0; i < books.length; i++) {
+        renderAddedComment(i);
+    }
+}

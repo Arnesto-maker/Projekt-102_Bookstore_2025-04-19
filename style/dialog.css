@@ -18,7 +18,10 @@
     flex-direction: column;
     gap: 16px;
     height: 428px;
-    width: 300px;
+    width: 340px;
+}
+.dialogSection.active{
+    display: flex;
 }
 #dialogImage{
     width: 72px;
