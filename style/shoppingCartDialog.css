@@ -72,3 +72,17 @@ td:nth-child(2){
     justify-content: space-around;
     gap: 152px;
 }
+@media(max-width: 960px){
+    #shoppingCartDialog{
+        width: 100vw;
+        height: fit-content;
+        max-height: fit-content;
+        top: 100px;
+        right: 0px;
+        justify-content: center;
+    }
+    #shoppingCartDialogContent{
+        width: 400px;
+        min-width: 400px;
+    }
+}

@@ -144,3 +144,78 @@
     height: 56px;
     object-fit: cover;
 }
+@media(min-width: 1920px){
+#shoppingCartSection{
+  display: none;
+}
+    
+}
+@media(max-width: 960px){
+    section{
+        height: 60vh;
+        box-sizing: border-box;
+    }
+    #shoppingCartSection{
+        width: 40px;
+        height: 40px;
+        top: 18px;
+        left: 20px;
+    }
+    #shoppingCartSectionImg{
+        width: 40px;
+        height: 40px;
+    }
+    .main-content{
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .store-card{
+        padding: 8px;
+        height: 280px;
+        font-size: 12px;
+        width: 280px;
+    }
+    .storeCardImg{
+        width: 48px;
+        height: 80px;
+    }
+    .storeCardRatingImg{
+        width: 20px;
+        height: 20px;
+    }
+    .storeCardBuyButton{
+        width: 80px;
+    }
+    #storeCardBuyButtonImg{
+        width: 12px;
+        height: 12px;
+    }
+    .main-content-grandChild{
+        gap: 8px;
+    }
+    .main-content-child{
+        width: 280px;
+
+        gap: 8px;
+    }
+    #prevCardImg{
+        width: 24px;
+        height: 24px;
+    }
+    #nextCardImg{
+        width: 24px;
+        height: 24px;
+        padding: 0;
+    }
+    #prevCard{
+        width: 24px;
+        height: 24px;
+    }
+    #nextCard{
+        width: 24px;
+        height: 24px;
+        padding: 0;
+    }
+    
+}

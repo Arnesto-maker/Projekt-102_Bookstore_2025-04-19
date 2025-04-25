@@ -28,3 +28,20 @@
     font-weight: 400;
     padding-left: 64px;
 }
+@media(max-width: 960px){
+    .logo-subtitle{
+        padding-left: 32px;
+    }
+    .logo-image{height: 32px;}
+    .logo{
+        gap: 8px;
+    }
+    .logo-parent{
+        gap: 8px;
+        align-items: center;
+    }
+    
+    h3{
+        font-size: 16px;
+    }
+}

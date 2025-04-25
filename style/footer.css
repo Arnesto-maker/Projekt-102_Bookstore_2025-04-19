@@ -22,3 +22,38 @@
     width: 56px;
     align-content: center;
 }
+@media(max-width: 960px){ 
+    footer{
+        height: 12vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content{
+        height: 12vh;
+        justify-content: center;
+        flex: 1;
+    }
+    .social-media-icon{
+        height: 40px;
+        width: 40px;
+        display: none;
+    }
+    .social-media{
+        gap: 8px;
+    }
+
+    .footer-text{
+        font-size: 12px;
+    }
+    .logo-parent{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex: 1;
+        justify-content: center;
+    }
+}
